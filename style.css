@@ -55,14 +55,6 @@ h1 {
     text-decoration: underline;
 }
 
-yt-icon {
-    width: 1px;
-    height: 1px;
-    object-fit: contain;
-    vertical-align: text-bottom;
-    margin-right: 4px;
-}
-
 /* Desktop View (>900px) */
 @media (min-width: 901px) {
     .container {
@@ -84,6 +76,7 @@ yt-icon {
     }
 
 }
+
 
 
 
