@@ -11,6 +11,13 @@ header {
     background-color: #ffffff;
 }
 
+.yt-icon {
+    width: 14px;      /* smaller size */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
 h1 {
     margin: 0;
 }
@@ -70,4 +77,5 @@ h1 {
     .container {
         grid-template-columns: 1fr;
     }
+
 }
