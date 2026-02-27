@@ -23,11 +23,16 @@ body {
     text-align: center;
 }
 
-/* Movie Poster */
+/* Equal Poster Size */
 .poster {
-    width: 100%;
-    height: 400px;       /* same height for all */
-    object-fit: cover;   /* crop evenly */
+    height: 420px;
+    object-fit: cover;
+}
+
+/* Make columns equal height */
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Card Hover Effect */
@@ -64,9 +69,6 @@ footer {
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">🎬 MovieList</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 </nav>
 
 <!-- Hero Section -->
@@ -78,92 +80,79 @@ footer {
 <div class="container py-5">
 <div class="row">
 
-<!-- Movie Card Template -->
-<!-- Repeat structure for all movies -->
-
-<div class="col-md-4 mb-4">
-<div class="card h-100 text-center">
-<div class="card-body">
-<h5 class="card-title font-weight-bold">1. Bridget Jones: Mad About the Boy</h5>
-<img src="images/bridget.jpg" class="img-fluid poster mb-3" alt="Bridget Jones">
-
-<a href="https://www.netflix.com/ch-en/title/81948249" class="d-block">Netflix</a>
-<a href="https://www.imdb.com/title/tt32063050/" class="d-block mb-2">IMDb</a>
-
-<a href="https://www.youtube.com/watch?v=AZr9lYz12jw" 
-   class="btn btn-youtube btn-sm">
-   ▶ Watch Trailer
-</a>
-</div>
-</div>
+<!-- Movie 1 -->
+<div class="col-md-4 mb-4 d-flex">
+  <div class="card shadow-sm text-center w-100">
+    <img src="images/bridget.jpg" class="card-img-top poster" alt="Bridget Jones">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title font-weight-bold">1. Bridget Jones: Mad About the Boy</h5>
+      <a href="https://www.netflix.com/ch-en/title/81948249" class="d-block">Netflix</a>
+      <a href="https://www.imdb.com/title/tt32063050/" class="d-block mb-3">IMDb</a>
+      <a href="https://www.youtube.com/watch?v=AZr9lYz12jw" class="btn btn-youtube btn-sm mt-auto">
+        ▶ Watch Trailer
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-4 mb-4">
-<div class="card h-100 text-center">
-<div class="card-body">
-<h5 class="card-title font-weight-bold">2. Peter Pan's Neverland Nightmare</h5>
-<img src="images/peterpan.jpg" class="img-fluid poster mb-3" alt="Peter Pan">
-
-<a href="https://www.netflix.com/ph-en/title/60031292" class="d-block">Netflix</a>
-<a href="https://www.imdb.com/title/tt21955520/" class="d-block mb-2">IMDb</a>
-
-<a href="https://www.youtube.com/watch?v=FtsthiWpcAQ" 
-   class="btn btn-youtube btn-sm">
-   ▶ Watch Trailer
-</a>
-</div>
-</div>
+<!-- Movie 2 -->
+<div class="col-md-4 mb-4 d-flex">
+  <div class="card shadow-sm text-center w-100">
+    <img src="images/peterpan.jpg" class="card-img-top poster" alt="Peter Pan">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title font-weight-bold">2. Peter Pan's Neverland Nightmare</h5>
+      <a href="https://www.netflix.com/ph-en/title/60031292" class="d-block">Netflix</a>
+      <a href="https://www.imdb.com/title/tt21955520/" class="d-block mb-3">IMDb</a>
+      <a href="https://www.youtube.com/watch?v=FtsthiWpcAQ" class="btn btn-youtube btn-sm mt-auto">
+        ▶ Watch Trailer
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-4 mb-4">
-<div class="card h-100 text-center">
-<div class="card-body">
-<h5 class="card-title font-weight-bold">3. Into the Deep</h5>
-<img src="images/intothedeep.jpg" class="img-fluid poster mb-3" alt="Into the Deep">
-
-<a href="https://www.netflix.com/ca/title/80239100" class="d-block">Netflix</a>
-<a href="https://www.imdb.com/title/tt28637027/" class="d-block mb-2">IMDb</a>
-
-<a href="https://www.youtube.com/watch?v=aXBb3Ymc34Y" 
-   class="btn btn-youtube btn-sm">
-   ▶ Watch Trailer
-</a>
-</div>
-</div>
+<!-- Movie 3 -->
+<div class="col-md-4 mb-4 d-flex">
+  <div class="card shadow-sm text-center w-100">
+    <img src="images/intothedeep.jpg" class="card-img-top poster" alt="Into the Deep">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title font-weight-bold">3. Into the Deep</h5>
+      <a href="https://www.netflix.com/ca/title/80239100" class="d-block">Netflix</a>
+      <a href="https://www.imdb.com/title/tt28637027/" class="d-block mb-3">IMDb</a>
+      <a href="https://www.youtube.com/watch?v=aXBb3Ymc34Y" class="btn btn-youtube btn-sm mt-auto">
+        ▶ Watch Trailer
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-4 mb-4">
-<div class="card h-100 text-center">
-<div class="card-body">
-<h5 class="card-title font-weight-bold">4. Chasing the Wind</h5>
-<img src="images/chasing.jpg" class="img-fluid poster mb-3" alt="Chasing the Wind">
-
-<a href="https://www.netflix.com/ph-en/title/81735228" class="d-block">Netflix</a>
-<a href="https://www.imdb.com/title/tt32730754/" class="d-block mb-2">IMDb</a>
-
-<a href="https://www.youtube.com/watch?v=yqzXJG3QAMs" 
-   class="btn btn-youtube btn-sm">
-   ▶ Watch Trailer
-</a>
-</div>
-</div>
+<!-- Movie 4 -->
+<div class="col-md-4 mb-4 d-flex">
+  <div class="card shadow-sm text-center w-100">
+    <img src="images/chasing.jpg" class="card-img-top poster" alt="Chasing the Wind">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title font-weight-bold">4. Chasing the Wind</h5>
+      <a href="https://www.netflix.com/ph-en/title/81735228" class="d-block">Netflix</a>
+      <a href="https://www.imdb.com/title/tt32730754/" class="d-block mb-3">IMDb</a>
+      <a href="https://www.youtube.com/watch?v=yqzXJG3QAMs" class="btn btn-youtube btn-sm mt-auto">
+        ▶ Watch Trailer
+      </a>
+    </div>
+  </div>
 </div>
 
-<div class="col-md-4 mb-4">
-<div class="card h-100 text-center">
-<div class="card-body">
-<h5 class="card-title font-weight-bold">5. Dark Nuns</h5>
-<img src="images/darknuns.jpg" class="img-fluid poster mb-3" alt="Dark Nuns">
-
-<a href="https://www.netflix.com/ph-en/title/80233862" class="d-block">Netflix</a>
-<a href="https://www.imdb.com/title/tt32491690/" class="d-block mb-2">IMDb</a>
-
-<a href="https://www.youtube.com/watch?v=sbyHK0otP6Y" 
-   class="btn btn-youtube btn-sm">
-   ▶ Watch Trailer
-</a>
-</div>
-</div>
+<!-- Movie 5 -->
+<div class="col-md-4 mb-4 d-flex">
+  <div class="card shadow-sm text-center w-100">
+    <img src="images/darknuns.jpg" class="card-img-top poster" alt="Dark Nuns">
+    <div class="card-body d-flex flex-column">
+      <h5 class="card-title font-weight-bold">5. Dark Nuns</h5>
+      <a href="https://www.netflix.com/ph-en/title/80233862" class="d-block">Netflix</a>
+      <a href="https://www.imdb.com/title/tt32491690/" class="d-block mb-3">IMDb</a>
+      <a href="https://www.youtube.com/watch?v=sbyHK0otP6Y" class="btn btn-youtube btn-sm mt-auto">
+        ▶ Watch Trailer
+      </a>
+    </div>
+  </div>
 </div>
 
 </div>
@@ -180,4 +169,3 @@ footer {
 
 </body>
 </html>
-
