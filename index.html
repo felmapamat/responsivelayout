@@ -1,89 +1,176 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>The 5 Best New Movies</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .poster {
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .yt-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-    <h1>The 5 Best New Movies</h1>
-</header>
+<div class="container py-5">
 
-<div class="container">
+    <h1 class="text-center mb-5 font-weight-bold">
+        The 5 Best New Movies
+    </h1>
 
-    <!-- Movie 1 -->
-    <div class="movie">
-        <h3>1. Bridget Jones: Mad About the Boy</h3>
-        <img src="images/bridget.jpg" class="poster" alt="Bridget Jones Poster">
+    <div class="row">
 
-        <p><a href="https://www.netflix.com/ch-en/title/81948249">https://www.netflix.com/ch-en/title/81948249</a></p>
-        <p><a href="https://www.imdb.com/title/tt32063050/">https://www.imdb.com/title/tt32063050/</a></p>
+        <!-- Movie 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">
+                        1. Bridget Jones: Mad About the Boy
+                    </h5>
 
-        <p>
-            <img src="youtube.png" class="yt-icon">
-            <a href="https://www.youtube.com/watch?v=AZr9lYz12jw">Bridget Jones: Mad About the Boy - Watch Trailer</a>
-        </p>
+                    <img src="images/bridget.jpg" class="img-fluid poster mb-3" alt="Bridget Jones Poster">
+
+                    <a href="https://www.netflix.com/ch-en/title/81948249" class="d-block">
+                        Netflix Link
+                    </a>
+
+                    <a href="https://www.imdb.com/title/tt32063050/" class="d-block">
+                        IMDb Link
+                    </a>
+
+                    <p class="mt-2">
+                        <img src="youtube.png" class="yt-icon">
+                        <a href="https://www.youtube.com/watch?v=AZr9lYz12jw">
+                            Watch Trailer
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">
+                        2. Peter Pan's Neverland Nightmare
+                    </h5>
+
+                    <img src="images/peterpan.jpg" class="img-fluid poster mb-3" alt="Peter Pan Poster">
+
+                    <a href="https://www.netflix.com/ph-en/title/60031292" class="d-block">
+                        Netflix Link
+                    </a>
+
+                    <a href="https://www.imdb.com/title/tt21955520/" class="d-block">
+                        IMDb Link
+                    </a>
+
+                    <p class="mt-2">
+                        <img src="youtube.png" class="yt-icon">
+                        <a href="https://www.youtube.com/watch?v=FtsthiWpcAQ">
+                            Watch Trailer
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">
+                        3. Into the Deep
+                    </h5>
+
+                    <img src="images/intothedeep.jpg" class="img-fluid poster mb-3" alt="Into the Deep Poster">
+
+                    <a href="https://www.netflix.com/ca/title/80239100" class="d-block">
+                        Netflix Link
+                    </a>
+
+                    <a href="https://www.imdb.com/title/tt28637027/" class="d-block">
+                        IMDb Link
+                    </a>
+
+                    <p class="mt-2">
+                        <img src="youtube.png" class="yt-icon">
+                        <a href="https://www.youtube.com/watch?v=aXBb3Ymc34Y">
+                            Watch Trailer
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">
+                        4. Chasing the Wind
+                    </h5>
+
+                    <img src="images/chasing.jpg" class="img-fluid poster mb-3" alt="Chasing the Wind Poster">
+
+                    <a href="https://www.netflix.com/ph-en/title/81735228" class="d-block">
+                        Netflix Link
+                    </a>
+
+                    <a href="https://www.imdb.com/title/tt32730754/" class="d-block">
+                        IMDb Link
+                    </a>
+
+                    <p class="mt-2">
+                        <img src="youtube.png" class="yt-icon">
+                        <a href="https://www.youtube.com/watch?v=yqzXJG3QAMs">
+                            Watch Trailer
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 5 -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm text-center">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">
+                        5. Dark Nuns
+                    </h5>
+
+                    <img src="images/darknuns.jpg" class="img-fluid poster mb-3" alt="Dark Nuns Poster">
+
+                    <a href="https://www.netflix.com/ph-en/title/80233862" class="d-block">
+                        Netflix Link
+                    </a>
+
+                    <a href="https://www.imdb.com/title/tt32491690/" class="d-block">
+                        IMDb Link
+                    </a>
+
+                    <p class="mt-2">
+                        <img src="youtube.png" class="yt-icon">
+                        <a href="https://www.youtube.com/watch?v=sbyHK0otP6Y">
+                            Watch Trailer
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <!-- Movie 2 -->
-    <div class="movie">
-        <h3>2. Peter Pan's Neverland Nightmare</h3>
-        <img src="images/peterpan.jpg" class="poster" alt="Peter Pan Poster">
-
-        <p><a href="https://www.netflix.com/ph-en/title/60031292">https://www.netflix.com/ph-en/title/60031292</a></p>
-        <p><a href="https://www.imdb.com/title/tt21955520/">https://www.imdb.com/title/tt21955520/</a></p>
-
-        <p>
-            <img src="youtube.png" class="yt-icon">
-            <a href="https://www.youtube.com/watch?v=FtsthiWpcAQ">Peter Pan's Neverland Nightmare - Watch Trailer</a>
-        </p>
-    </div>
-
-    <!-- Movie 3 -->
-    <div class="movie">
-        <h3>3. Into the Deep</h3>
-        <img src="images/intothedeep.jpg" class="poster" alt="Into the Deep Poster">
-
-        <p><a href="https://www.netflix.com/ca/title/80239100">https://www.netflix.com/ca/title/80239100</a></p>
-        <p><a href="https://www.imdb.com/title/tt28637027/">https://www.imdb.com/title/tt28637027/</a></p>
-
-        <p>
-            <img src="youtube.png" class="yt-icon">
-            <a href="https://www.youtube.com/watch?v=aXBb3Ymc34Y">Into the Deep - Watch Trailer</a>
-        </p>
-    </div>
-
-    <!-- Movie 4 -->
-    <div class="movie">
-        <h3>4. Chasing the Wind</h3>
-        <img src="images/chasing.jpg" class="poster" alt="Chasing the Wind Poster">
-
-        <p><a href="https://www.netflix.com/ph-en/title/81735228">https://www.netflix.com/ph-en/title/81735228</a></p>
-        <p><a href="https://www.imdb.com/title/tt32730754/">https://www.imdb.com/title/tt32730754/</a></p>
-
-        <p>
-            <img src="youtube.png" class="yt-icon">
-            <a href="https://www.youtube.com/watch?v=yqzXJG3QAMs">Chasing the Wind - Watch Trailer</a>
-        </p>
-    </div>
-
-    <!-- Movie 5 -->
-    <div class="movie">
-        <h3>5. Dark Nuns</h3>
-        <img src="images/darknuns.jpg" class="poster" alt="Dark Nuns Poster">
-
-        <p><a href="https://www.netflix.com/ph-en/title/80233862">https://www.netflix.com/ph-en/title/80233862</a></p>
-        <p><a href="https://www.imdb.com/title/tt32491690/">https://www.imdb.com/title/tt32491690/</a></p>
-
-        <p>
-            <img src="youtube.png" class="yt-icon">
-            <a href="https://www.youtube.com/watch?v=sbyHK0otP6Y">Dark Nuns - Watch Trailer</a>
-        </p>
-    </div>
-
 </div>
 
 </body>
