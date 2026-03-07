@@ -5,87 +5,98 @@ body {
     background-color: #f4f4f4;
 }
 
+/* HEADER */
 header {
     text-align: center;
     padding: 20px;
     background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
 h1 {
     margin: 0;
 }
 
+/* CONTAINER GRID */
 .container {
     display: grid;
-    gap: 20px;
-    padding: 20px;
+    gap: 25px;
+    padding: 25px;
 }
 
-.yt-icon {
-    width: 16px;        /* text-like size */
-    height: 16px;
-    object-fit: contain;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-/* Movie Card */
+/* MOVIE CARD */
 .movie {
     background: white;
     padding: 15px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 1px solid #ddd;
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-.movie > img {
+
+/* HOVER EFFECT */
+.movie:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* MOVIE POSTER */
+.movie img {
     width: 100%;
-    max-width: 200px;
+    max-width: 220px;
     height: auto;
     display: block;
     margin: 10px auto;
+    border-radius: 5px;
 }
+
+/* LINKS */
 .movie a {
     text-decoration: none;
     color: #0066cc;
     font-size: 14px;
+    display: block;
+    margin: 4px 0;
 }
 
 .movie a:hover {
     text-decoration: underline;
     color: red;
 }
-.movie .poster {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
+
+/* YOUTUBE ICON */
+.yt-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
-.movie a {
-    text-decoration: none;
-    color: blue;
-    font-size: 14px;
+/* DESKTOP VIEW (Large Screens ≥992px) */
+@media (min-width: 992px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
-.movie a:hover {
-    text-decoration: underline;
-}
-
-/* Desktop View (>900px) */
-@media (min-width: 901px) {
+/* MEDIUM SCREENS (Tablets ≥768px) */
+@media (min-width: 768px) and (max-width: 991px) {
     .container {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Tablet View (601px - 900px) */
-@media (min-width: 601px) and (max-width: 900px) {
+/* SMALL SCREENS (≥576px) */
+@media (min-width: 576px) and (max-width: 767px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Mobile View (<601px) */
-@media (max-width: 600px) {
+/* MOBILE SCREENS (<576px) */
+@media (max-width: 575px) {
     .container {
         grid-template-columns: 1fr;
     }
-
 }
